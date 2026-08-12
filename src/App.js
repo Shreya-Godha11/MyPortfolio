@@ -148,7 +148,7 @@ function App() {
       title: 'Python Programming Fundamentals',
       provider: 'Microsoft | Coursera',
       category: 'Technical Certification',
-      imgUrl: '/certificates/microsoft_certificate.png',
+      imgUrl: `${process.env.PUBLIC_URL}/certificates/microsoft_certificate.png`,
       fallbackIcon: <FaCertificate />
     },
     {
@@ -156,7 +156,7 @@ function App() {
       title: 'Data Analytics Job Simulation',
       provider: 'Deloitte Australia — Forage',
       category: 'Practical Job Simulation',
-      imgUrl: '/certificates/deloitte_certificate.png',
+      imgUrl: `${process.env.PUBLIC_URL}/certificates/deloitte_certificate.png`,
       fallbackIcon: <FaBriefcase />
     },
     {
@@ -164,7 +164,7 @@ function App() {
       title: 'Basics of Python',
       provider: 'Infosys Springboard',
       category: 'Technical Credential',
-      imgUrl: '/certificates/infosys_certificate.png',
+      imgUrl: `${process.env.PUBLIC_URL}/certificates/infosys_certificate.png`,
       fallbackIcon: <FaCode />
     }
   ];
@@ -269,7 +269,7 @@ function App() {
             {/* Left: Profile Photo & Navigation buttons */}
             <div className="about-photo-wrapper">
               <div className="profile-photo-container">
-                <img src="/profile-photo.jpg" alt="Shreya Godha - Profile" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop'; }} />
+                <img src={`${process.env.PUBLIC_URL}/profile-photo.jpg`} alt="Shreya Godha - Profile" />
               </div>
 
               <div className="view-work-nav">
